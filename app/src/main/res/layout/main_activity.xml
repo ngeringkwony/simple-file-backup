@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_server_address"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Server Address"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_server_username"
+        android:layout_below="@+id/et_server_address"
+        android:layout_centerHorizontal="true"
+        android:hint="Server Username"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_server_password"
+        android:layout_below="@+id/et_server_username"
+        android:layout_centerHorizontal="true"
+        android:hint="Server Password"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/b_upload"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="Upload File"
+        android:layout_below="@+id/b_connect"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+
+        />
+
+    <Button
+        android:id="@+id/b_download"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="Download File"
+        android:layout_below="@+id/b_upload"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/b_connect"
+        android:layout_below="@+id/et_server_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/b_disconnect"
+        android:layout_below="@+id/b_download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
